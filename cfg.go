@@ -85,7 +85,7 @@ func (s Config) fetchKeyAndValue(line string) {
 
 func (s Config) String() string {
 	var buffer bytes.Buffer
-	buffer.WriteString("{\n}")
+	buffer.WriteString("{\n")
 	for key, val := range s {
 		buffer.WriteString("  " + key + ": " + val + "\n")
 	}
